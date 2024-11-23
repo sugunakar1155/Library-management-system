@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+	.lab-container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction:column;
+		background-color: #b1e5c3;
+		height: 100vh;
+	}
+	form{
+		width: 30%;
+		border:2px solid black;
+		padding: 10px;
+	}
+	form input{
+		    margin-top: 20px;
+    margin-left: 10px;
+    width: 339px;
+    border-radius: 5px;
+    height: 27px;
+		
+	}
+	form input[type=submit]{
+	background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    height: 41px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+	}
+	
+</style>
+<body>
+	<div class="lab-container">
+	<h1>Librarian Login</h1>
+<form action ="librarian" method ="post"">
+UserName:<input type ="text" name="uname"><br>
+Password:<input type="password" name="pword"><br>
+<input type="submit" value="Login">
+	</div>
+</body>
+</html>

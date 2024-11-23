@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+	.login-container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction:column;
+		background-color: #81ceb3;
+		height: 100vh;
+	}
+	form{
+		width: 30%;
+		border:2px solid black;
+		padding: 10px;
+	}
+	form input{
+		    margin-top: 20px;
+    margin-left: 10px;
+    width: 339px;
+    border-radius: 5px;
+    height: 27px;
+		
+	}
+	form input[type=submit]{
+	background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    height: 41px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+	}
+</style>
+<body>
+	<div class="login-container">
+		<h1>Add  BookDetails</h1>
+<form action="addbook" method ="post">
+BookCode:<input type="text" name="code"><br>
+BookName:<input type="text" name="name"><br>
+AuthorName:<input type="text" name="aname"><br>
+Price:<input type="number" name="price"><br>
+Quantity:<input type="number" name="quantity"><br>
+<input type="submit" value="AddBookDetails">
+	
+</form>
+</div>
+</body>
+</html>
